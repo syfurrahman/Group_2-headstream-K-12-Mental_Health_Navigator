@@ -17,7 +17,7 @@ To verify the installation, open a terminal and run:
 ```bash
 node -v
 npm -v
-
+```
 
 ## ** 2. Run file**
 To run the file do these steps
