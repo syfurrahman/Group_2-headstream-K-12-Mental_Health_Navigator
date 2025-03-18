@@ -19,7 +19,7 @@ node -v
 npm -v
 ```
 
-### ** 2. Run file **
+### **1. Run code**  
 To run the file do these steps
 ```bash
 cd my-app
