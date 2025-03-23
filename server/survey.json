@@ -1,0 +1,65 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "text": "Main Question 1",
+        "type": "multiple-choice",
+        "answers": [
+          {
+            "text": "Answer 1",
+            "pageIds": ["A1", "A2"],
+            "followUpQuestionId": 2
+          },
+          {
+            "text": "Answer 2",
+            "pageIds": ["A3", "A4"],
+            "followUpQuestionId": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Sub Question 1",
+        "type": "multiple-choice",
+        "answers": [
+          {
+            "text": "Answer 1",
+            "pageIds": ["B1", "B2"]
+          },
+          {
+            "text": "Answer 2",
+            "pageIds": ["B3", "B4"]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Sub Question 2",
+        "type": "multiple-choice",
+        "answers": [
+          {
+            "text": "Answer 1",
+            "pageIds": ["C1", "C2"]
+          },
+          {
+            "text": "Answer 2",
+            "pageIds": ["C3", "C4"]
+          }
+        ]
+      }
+    ],
+    "openEndedQuestions": [
+      {
+        "id": 1,
+        "text": "Open-ended Question 1"
+      },
+      {
+        "id": 2,
+        "text": "Open-ended Question 2"
+      },
+      {
+        "id": 3,
+        "text": "Open-ended Question 3"
+      }
+    ]
+  }
