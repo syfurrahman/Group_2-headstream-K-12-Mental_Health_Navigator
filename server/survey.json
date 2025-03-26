@@ -51,7 +51,7 @@
             "followUpQuestionId": "q2"
           },
             {
-                "text": "j) Prefer not to say",
+                "text": "j) Other (please specify)",
                 "pageIds": ["A3", "A4"],
                 "followUpQuestionId": "q2"
             }

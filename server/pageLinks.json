@@ -1,14 +1,21 @@
 {
-    "A1": "https://example.com/pageA1",
-    "A2": "https://example.com/pageA2",
-    "A3": "https://example.com/pageA3",
-    "A4": "https://example.com/pageA4",
-    "B1": "https://example.com/pageB1",
-    "B2": "https://example.com/pageB2",
-    "B3": "https://example.com/pageB3",
-    "B4": "https://example.com/pageB4",
-    "C1": "https://example.com/pageC1",
-    "C2": "https://example.com/pageC2",
-    "C3": "https://example.com/pageC3",
-    "C4": "https://example.com/pageC4"
-  }
+  "R1": "https://example.com/pageR1",
+  "R2": "https://example.com/pageR2",
+  "R3": "https://example.com/pageR3",
+  "R4": "https://example.com/pageR4",
+  "R5": "https://example.com/pageR5",
+  "R6": "https://example.com/pageR6",
+  "R10": "https://example.com/pageR10",
+  "R11": "https://example.com/pageR11",
+  "R12": "https://example.com/pageR12",
+  "R13": "https://example.com/pageR13",
+  "R20": "https://example.com/pageR20",
+  "R21": "https://example.com/pageR21",
+  "R22": "https://example.com/pageR22",
+  "R23": "https://example.com/pageR23",
+  "R24": "https://example.com/pageR24",
+  "R30": "https://example.com/pageR30",
+  "R40": "https://example.com/pageR40",
+  "R50": "https://example.com/pageR50"
+}
+
