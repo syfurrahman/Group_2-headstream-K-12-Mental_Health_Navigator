@@ -7,7 +7,7 @@
         "answers": [
           {
             "text": "a) State education agency",
-            "pageIds": ["A1", "A2"],
+            "pageIds": ["R1", "R3", "R4", "R10","R20","R30","R40"],
             "followUpQuestionId": "q1b"
           },
           {
@@ -52,42 +52,107 @@
           },
             {
                 "text": "j) Other (please specify)",
-                "pageIds": ["A3", "A4"],
+                "pageIds": ["R1"],
                 "followUpQuestionId": "q2"
             }
         ]
       },
+
       {
-        "id": "q1b",
-        "text": "Sub Question 1",
+        "id": "q2a",
+        "text": "Which of the following best describes your role? Please select all that apply.",
         "type": "multiple-choice",
         "answers": [
           {
-            "text": "Answer 1",
+            "text": "Superintendent or district leader",
             "pageIds": ["B1", "B2"]
           },
           {
-            "text": "Answer 2",
+            "text": "Principal or school administrator",
             "pageIds": ["B3", "B4"]
+          },
+          {
+            "text": "School or district clinician (i.e. counselor, psychologist, social worker)",
+            "pageIds": ["B5", "B6"]
+          },
+          {
+            "text": "School or district wellness coordinator",
+            "pageIds": ["B7", "B8"]
+          },
+          {
+            "text": "Technology or curriculum director",
+            "pageIds": ["B9", "B10"]
+          },
+          {
+            "text": "Classroom teacher",
+            "pageIds": ["B11", "B12"]
+          },
+          {
+            "text": "Parent or caregiver",
+            "pageIds": ["B13", "B14"]
+          },
+          {
+            "text": "Student",
+            "pageIds": ["B15", "B16"]
+          },
+          {
+            "text": "Other (please specify)",
+            "pageIds": ["B17", "B18"]
           }
         ]
       },
       {
-        "id": "q2",
-        "text": "Sub Question 2",
+        "id": "q2b",
+        "text": "Which of the following best describes your role? Please select all that apply.",
         "type": "multiple-choice",
         "answers": [
           {
-            "text": "Answer 1",
+            "text": "Parent or caregiver",
             "pageIds": ["C1", "C2"]
           },
           {
-            "text": "Answer 2",
+            "text": "Organizational Leader",
             "pageIds": ["C3", "C4"]
+          },
+          {
+            "text": "Researcher",
+            "pageIds": ["C5", "C6"]
+          },
+          {
+            "text": "Other (please specify)",
+            "pageIds": ["C7", "C8"]
+          }
+        ]
+      },
+      {
+        "id": "q3a",
+        "text": "Which of the following responsibilities are mostly closely aligned with your role and purview? Please select all that apply.",
+        "type": "multiple-choice",
+        "answers": [
+          {
+            "text": "I make recommendations for mental health/well-being solutions to be adopted by schools in my jurisdiction",
+            "pageIds": ["C1", "C2"]
+          },
+          {
+            "text": "I make final purchasing decisions for mental health/well-being solution adoption for schools in my jurisdiction",
+            "pageIds": ["C3", "C4"]
+          },
+          {
+            "text": "I am a primary contact point for stakeholder engagement of schools in my jurisdiction",
+            "pageIds": ["C5", "C6"]
+          },
+          {
+            "text": "I am responsible for the implementation and/or oversight of mental health/well-being solutions for schools in my jurisdiction",
+            "pageIds": ["C7", "C8"]
+          },
+          {
+            "text": "None of the above",
+            "pageIds":["C9", "C10"]
           }
         ]
       }
     ],
+
     "openEndedQuestions": [
       {
         "id": "q6",
