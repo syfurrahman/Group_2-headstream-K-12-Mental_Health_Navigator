@@ -1,3 +1,5 @@
+Always remember to do: git pull orgin main before changing or commiting any code
+
 Things to do for backend:
 
 add all questions and subquestions in the survey.json
