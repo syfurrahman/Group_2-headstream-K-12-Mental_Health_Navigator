@@ -157,19 +157,23 @@
       "answers": [
         {
           "text": "I make recommendations for mental health/well-being solutions to be adopted by schools in my jurisdiction",
-          "pageIds": ["D1", "D2"]
+          "pageIds": ["R2", "R4", "R10", "R11","R12", "R13", "R20", "R21", "R22", "R23", "R24", "R30"]
         },
         {
           "text": "I make final purchasing decisions for mental health/well-being solution adoption for schools in my jurisdiction",
-          "pageIds": ["D3", "D4"]
+          "pageIds": [ "R4","R5", "R10", "R11","R12", "R13"]
         },
         {
           "text": "I am a primary contact point for stakeholder engagement of schools in my jurisdiction",
-          "pageIds": ["D5", "D6"]
+          "pageIds": [ "R3", "R11", "R12"]
+        },
+        {
+          "text": "I work directly with students on a regular or daily basis",
+          "pageIds": ["R2", "R3", "R4", "R6", "R10", "R11", "R12", "R13"]
         },
         {
           "text": "I am responsible for the implementation and/or oversight of mental health/well-being solutions for schools in my jurisdiction",
-          "pageIds": ["D7", "D8"]
+          "pageIds": ["R2", "R3", "R6", "R10", "R11", "R12", "R13", "R20", "R21", "R22", "R23", "R24"]
         },
         {
           "text": "None of the above",
@@ -184,24 +188,114 @@
       "answers": [
         {
           "text": "I make recommendations for mental health/well-being solutions to be adopted by schools in my jurisdiction",
-          "pageIds": ["E1", "E2"]
+          "pageIds": ["R2", "R4", "R10", "R11","R12", "R13", "R20", "R21", "R22", "R23", "R24", "R30"]
         },
         {
           "text": "I make final purchasing decisions for mental health/well-being solution adoption for schools in my jurisdiction",
-          "pageIds": ["E3", "E4"]
+          "pageIds": ["R4", "R5", "R10", "R11", "R12", "R13" ]
         },
         {
           "text": "I am a primary contact point for stakeholder engagement of schools in my jurisdiction",
-          "pageIds": ["E5", "E6"]
+          "pageIds": ["R3", "R11", "R12"]
+        },
+        {
+          "text": "I work directly with students on a regular or daily basis",
+          "pageIds": ["R2", "R3", "R4", "R6", "R10", "R11", "R12", "R13"]
         },
         {
           "text": "I am responsible for the implementation and/or oversight of mental health/well-being solutions for schools in my jurisdiction",
-          "pageIds": ["E7", "E8"]
+          "pageIds": ["R2", "R3", "R6", "R10", "R11", "R12", "R13", "R20", "R21", "R22", "R23", "R24"]
         },
         {
           "text": "None of the above",
           "pageIds": ["E9", "E10"]
         }
+      ]
+    },
+    {
+      "id": "Q4",
+      "text": "What brings you here today? Please select all that apply.",
+      "type": "multiple-choice",
+      "answers": [
+        {
+          "text": "I want to better understand mental health needs of students in my school(s), district, or broader education community",
+          "pageIds": ["R2", "R10"]
+        },
+        {
+          "text": "I want guidance on which stakeholder groups or entities to involve in the decision-making process for adopting new digital well-being solutions",
+          "pageIds": ["R3", "R21"]
+        },
+        {
+          "text": "I want advice for how to choose the right mental health solution for my school(s), district, or broader education community",
+          "pageIds": ["R4"]
+        },
+        {
+          "text": "I want advice on how to source funding for the adoption of a digital well-being solution",
+          "pageIds": ["R5"]
+        },
+        {
+          "text": "I want guidance on implementing a mental health initiative that I’ve selected for my school(s), district, or broader education community",
+          "pageIds": ["R2", "R6"]
+        },
+        {
+          "text": "I want support in building an assessment plan for the mental health initiatives in my school(s), district, or broader education community",
+          "pageIds": ["R4"]
+        },
+        {
+          "text": "I want to see examples of how other school(s)/ districts have assessed student needs for their unique contexts, engaged with stakeholders, and implemented solutions",
+          "pageIds": ["R20", "R21", "R22", "R23", "R24"]
+        },
+        {
+          "text": "I want to learn more about common student mental health challenges",
+          "pageIds": ["R10", "R11", "R12", "R13"]
+        },
+        {
+          "text": "I want to get a better sense of what kinds of digital well-being solutions are out there",
+          "pageIds": ["R30"]
+        },
+        {
+          "text": "I’m just browsing out of curiosity; I don’t have a specific need right now",
+          "pageIds": ["R30", "R40"]
+        },
+        {
+          "text": "Other (please specify)",
+          "pageIds": []
+        }
+      ]
+    },
+    {
+      "id": "Q5",
+      "text": "Which of the following are the biggest priorities for your school, district, or broader education community right now? Please select all that apply.",
+      "type": "multiple-choice",
+      "answers": [
+        {
+          "text": "Developing of students’ life and character-building skills",
+          "pageIds": ["R10"]
+        },
+        {
+          "text": "Promoting and strengthening social and school connectedness",
+          "pageIds": ["R11"]
+        },
+        {
+          "text": "Equipping staff and students to improve recognition of and response to signs of distress",
+          "pageIds": ["R12"]
+        },
+        {
+          "text": "Ensuring student access to effective mental health treatment",
+          "pageIds": ["R13"]
+        },
+        {
+          "text": "My school(s), district, or education community is in the process of deciding this",
+          "pageIds": ["R2"]
+        },
+        {
+          "text": "I’m not sure",
+          "pageIds": []
+        },
+        {
+          "text": "Other (please specify)",
+          "pageIds": []
+        }        
       ]
     }
   ],
