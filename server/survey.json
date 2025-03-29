@@ -52,7 +52,7 @@
         },
         {
           "text": "j) Other (please specify)",
-          "pageIds": ["R1"],
+          "pageIds": ["R1", "R30", "R40"],
           "followUpQuestionId": ["Q2b", "Q3c"]
         }
       ]
@@ -64,39 +64,39 @@
       "answers": [
         {
           "text": "Superintendent or district leader",
-          "pageIds": ["B1", "B2"]
+          "pageIds": ["R3", "R5", "R6", "R13", "R20", "R21", "R22", "R23", "R24", "R30"]
         },
         {
           "text": "Principal or school administrator",
-          "pageIds": ["B3", "B4"]
+          "pageIds": ["R2", "R3", "R4", "R5", "R6", "R10", "R11", "R12", "R13", "R20", "R21", "R22", "R23", "R24", "R30"]
         },
         {
           "text": "School or district clinician (i.e. counselor, psychologist, social worker)",
-          "pageIds": ["B5", "B6"]
+          "pageIds": ["R2", "R3", "R4", "R5", "R6", "R10", "R11", "R12", "R13", "R20", "R21", "R22", "R23", "R24", "R30"]
         },
         {
           "text": "School or district wellness coordinator",
-          "pageIds": ["B7", "B8"]
+          "pageIds": ["R3", "R4", "R6", "R11", "R12", "R13", "R30", "R40"]
         },
         {
           "text": "Technology or curriculum director",
-          "pageIds": ["B9", "B10"]
+          "pageIds": ["R13", "R30", "R40"]
         },
         {
           "text": "Classroom teacher",
-          "pageIds": ["B11", "B12"]
+          "pageIds": ["R2", "R3", "R4", "R6", "R10", "R11", "R12", "R13", "R30", "R40"]
         },
         {
           "text": "Parent or caregiver",
-          "pageIds": ["B13", "B14"]
+          "pageIds": ["R2", "R4", "R6", "R10", "R12", "R13", "R30", "R40"]
         },
         {
           "text": "Student",
-          "pageIds": ["B15", "B16"]
+          "pageIds": ["R3", "R4", "R6", "R11", "R12", "R13", "R30", "R40"]
         },
         {
           "text": "Other (please specify)",
-          "pageIds": ["B17", "B18"]
+          "pageIds": ["R13", "R30", "R40"]
         }
       ]
     },
@@ -107,19 +107,19 @@
       "answers": [
         {
           "text": "Parent or caregiver",
-          "pageIds": ["C1", "C2"]
+          "pageIds": ["R2", "R4", "R6", "R10", "R12", "R13", "R30", "R40"]
         },
         {
           "text": "Organizational Leader",
-          "pageIds": ["C3", "C4"]
+          "pageIds": ["R4", "R5", "R6", "R13", "R30", "R40"]
         },
         {
           "text": "Researcher",
-          "pageIds": ["C5", "C6"]
+          "pageIds": ["R4", "R12", "R13", "R30", "R40"]
         },
         {
           "text": "Other (please specify)",
-          "pageIds": ["C7", "C8"]
+          "pageIds": ["R13", "R30", "R40"]
         }
       ]
     },
@@ -130,23 +130,23 @@
       "answers": [
         {
           "text": "I make recommendations for mental health/well-being solutions to be adopted by schools in my jurisdiction",
-          "pageIds": ["C1", "C2"]
+          "pageIds": ["R2", "R4", "R10", "R11", "R12", "R13", "R20", "R21", "R22", "R23", "R24", "R30"]
         },
         {
           "text": "I make final purchasing decisions for mental health/well-being solution adoption for schools in my jurisdiction",
-          "pageIds": ["C3", "C4"]
+          "pageIds": ["R4", "R5", "R10", "R11", "R12"]
         },
         {
           "text": "I am a primary contact point for stakeholder engagement of schools in my jurisdiction",
-          "pageIds": ["C5", "C6"]
+          "pageIds": ["R3", "R11", "R12"]
         },
         {
           "text": "I am responsible for the implementation and/or oversight of mental health/well-being solutions for schools in my jurisdiction",
-          "pageIds": ["C7", "C8"]
+          "pageIds": ["R2", "R3", "R6", "R10", "R11", "R12", "R13", "R20", "R21", "R22", "R23", "R24"]
         },
         {
           "text": "None of the above",
-          "pageIds": ["C9", "C10"]
+          "pageIds": []
         }
       ]
     },
@@ -177,7 +177,7 @@
         },
         {
           "text": "None of the above",
-          "pageIds": ["D9", "D10"]
+          "pageIds": []
         }
       ]
     },
@@ -208,7 +208,7 @@
         },
         {
           "text": "None of the above",
-          "pageIds": ["E9", "E10"]
+          "pageIds": []
         }
       ]
     },
@@ -234,7 +234,7 @@
           "pageIds": ["R5"]
         },
         {
-          "text": "I want guidance on implementing a mental health initiative that I’ve selected for my school(s), district, or broader education community",
+          "text": "I want guidance on implementing a mental health initiative that Ive selected for my school(s), district, or broader education community",
           "pageIds": ["R2", "R6"]
         },
         {
@@ -254,7 +254,7 @@
           "pageIds": ["R30"]
         },
         {
-          "text": "I’m just browsing out of curiosity; I don’t have a specific need right now",
+          "text": "Im just browsing out of curiosity; I dont have a specific need right now",
           "pageIds": ["R30", "R40"]
         },
         {
@@ -269,7 +269,7 @@
       "type": "multiple-choice",
       "answers": [
         {
-          "text": "Developing of students’ life and character-building skills",
+          "text": "Developing of students life and character-building skills",
           "pageIds": ["R10"]
         },
         {
@@ -289,7 +289,7 @@
           "pageIds": ["R2"]
         },
         {
-          "text": "I’m not sure",
+          "text": "Im not sure",
           "pageIds": []
         },
         {
