@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/styles.css">
+    <title>K-12 Mental Health Tech | Supporting Student Wellbeing</title>
+</head>
+<body>
+   
+     <!-- Header Section -->
+     <header>
+        <div class="container">
+            <nav class="nav-container">
+                <a href="client/index.html" class="logo">K-12 Mental Health Tech</a>
+                <button class="mobile-toggle">☰</button>
+                <ul class="nav-links">
+                    <li><a href="/client/aboutus.html">About</a></li>
+                
+                    
+                    <li class="dropdown">
+                        <a href="#features" class="dropdown-toggle">
+                            Explore <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tutorials"> Assess Student Needs</a></li>
+                            <li><a href="#docs">Plan for Stakeholder Engagement</a></li>
+                            <li><a href="#tools">Select Relevant Solutions</a></li>
+                            <li><a href="#tools">Develop a Funding Strategy</a></li>
+                            <li><a href="#tools">Implement your Chosen Solution</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Case Studies  <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/client//methuen.html">Methuen</a></li>
+                            <li><a href="/client/CaseStudiesPages/case2.html">Rim of the World Unified</a></li>
+                            <li><a href="/client/CaseStudiesPages/case3.html">Uplift Education</a></li>
+                            <li><a href="/client/CaseStudiesPages/case4.html">Judson ISD</a></li>
+                            <li><a href="/client/CaseStudiesPages/case5.html">Cherry Creek</a></li>
+
+
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="/client/src/logoside.svg" alt="Logo" class="hero-logo">
+        <div class="container">
+            <h1>A guide to choosing and using digital interventions for student well-being</h1>
+            <p>The K-12 Mental Health Tech Navigator is here to help schools and districts choose and use effective digital tools for student mental health and well-being. 
+                Wherever possible, we've included guidance on how to integrate these digital health products into a broader, more comprehensive approach to student mental health. 
+                To get the most from it, we recommend following our digital health product procurement journey.</p>
+            <a href="https://share.hsforms.com/1Ac7n6sLMQWKbnBA7d703TQq6wl6" class="btn" target="_blank" rel="noopener">Join Us</a>
+
+            <a href="#resources" class="btn">About Us</a>
+        </div>
+
+        
+    </section>
+    
+    <!-- Resources Section -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-heading">Featured Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>Screening Tools Guide</h3>
+                        <p>A comprehensive guide to mental health screening tools appropriate for K-12 settings.</p>
+                        <a href="#" class="btn">Download</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>Technology Implementation</h3>
+                        <p>Best practices for implementing mental health technology in diverse school environments.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>App Evaluation Toolkit</h3>
+                        <p>Tools to help schools evaluate and select appropriate mental health applications.</p>
+                        <a href="#" class="btn">Access Toolkit</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>Webinar Series</h3>
+                        <p>Recorded webinars featuring experts in school mental health technology.</p>
+                        <a href="#" class="btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-heading">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="school">School/Organization</label>
+                    <input type="text" id="school">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chat Bubble -->
+    <button id="floatingChatButton" class="chat-bubble">💬</button>
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="chat-modal hidden">
+    <div class="chat-header">
+        <span>Ask Us Anything</span>
+        <button id="closeChat" class="close-button">✕</button>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p id="initialPrompt"><em>Hi! How can we help you today?</em></p>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button id="sendMessage">Send</button>
+    </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>K-12 Mental Health Tech</h3>
+                    <p>Supporting student wellbeing through effective technology solutions.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Guides & Toolkits</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                <p>&copy; 2025 K-12 Mental Health Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

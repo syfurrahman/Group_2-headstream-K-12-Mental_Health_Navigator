@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/styles.css">
+    <title>K-12 Mental Health Tech | Supporting Student Wellbeing</title>
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav class="nav-container">
+                <a href="client/index.html" class="logo">K-12 Mental Health Tech</a>
+                <button class="mobile-toggle">☰</button>
+                <ul class="nav-links">
+                    <li><a href="/client/aboutus.html">About</a></li>
+                
+                    
+                    <li class="dropdown">
+                        <a href="#features" class="dropdown-toggle">
+                            Explore <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tutorials"> Assess Student Needs</a></li>
+                            <li><a href="#docs">Plan for Stakeholder Engagement</a></li>
+                            <li><a href="#tools">Select Relevant Solutions</a></li>
+                            <li><a href="#tools">Develop a Funding Strategy</a></li>
+                            <li><a href="#tools">Implement your Chosen Solution</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Case Studies  <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/client/CaseStudiesPages/methuen.html">Methuen</a></li>
+                            <li><a href="/client/CaseStudiesPages/case2.html">Rim of the World Unified</a></li>
+                            <li><a href="/client/CaseStudiesPages/case3.html">Uplift Education</a></li>
+                            <li><a href="/client/CaseStudiesPages/case4.html">Judson ISD</a></li>
+                            <li><a href="/client/CaseStudiesPages/case5.html">Cherry Creek</a></li>
+
+
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+        
+        .case-study {
+            padding: 60px 0;
+        }
+        
+        .case-study-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 40px;
+        }
+        
+        .sidebar {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        
+        .sidebar h3 {
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--medium-gray);
+        }
+        
+        .sidebar-info {
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .sidebar-info p, .sidebar-info ul {
+            font-size: 0.95rem;
+        }
+        
+        .sidebar-info ul {
+            list-style-position: inside;
+            margin-top: 8px;
+            padding-left: 10px;
+        }
+        
+        .sidebar-info ul li {
+            margin-bottom: 8px;
+        }
+        
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+        
+        .main-content h3 {
+            font-size: 1.5rem;
+            margin: 35px 0 15px;
+            color: var(--secondary-color);
+        }
+        
+        .main-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .quote {
+            background-color: var(--light-gray);
+            border-left: 4px solid var(--accent-color);
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .quote-author {
+            font-weight: bold;
+            margin-top: 15px;
+            font-style: normal;
+            color: var(--dark-gray);
+        }
+        
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .outcomes {
+            margin: 50px 0;
+            padding: 35px;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .outcomes h3 {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .outcome-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .outcome-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .outcome-card h4 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .highlights {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .highlights h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .highlights-list {
+            list-style-type: none;
+        }
+        
+        .highlights-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .highlights-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .copyright {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 900px) {
+            .case-study-container {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .case-study-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .sidebar {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Rim of the World Unified School District Case Study</h1>
+            <p>How a rural mountain district enhanced mental health support through innovative technology integration</p>
+        </div>
+    </section>
+    
+    <section class="case-study">
+        <div class="container case-study-container">
+            <div class="sidebar">
+                <h3>District Profile</h3>
+                
+                <div class="sidebar-info">
+                    <h4>Location</h4>
+                    <p>San Bernardino Mountains, California</p>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Size</h4>
+                    <p>~3,000 students</p>
+                    <p>4 schools (1 high school, 1 middle school, 2 elementary schools)</p>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Demographics</h4>
+                    <ul>
+                        <li>65% White</li>
+                        <li>25% Hispanic/Latino</li>
+                        <li>5% Black/African American</li>
+                        <li>5% Other</li>
+                        <li>58% Economically Disadvantaged</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Key Challenges</h4>
+                    <ul>
+                        <li>Rural mountain geography limiting access to services</li>
+                        <li>Frequent weather-related school closures</li>
+                        <li>Limited mental health providers in the community</li>
+                        <li>Transportation barriers for families</li>
+                        <li>Stigma around mental health in small communities</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Technology Implemented</h4>
+                    <ul>
+                        <li>Comprehensive telehealth platform</li>
+                        <li>Mobile app for students and families</li>
+                        <li>Digital resource hub for staff</li>
+                        <li>Data analytics for early identification</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h2>Overcoming Geographic Barriers to Mental Health Support</h2>
+                
+                <p>Nestled in the San Bernardino Mountains, Rim of the World Unified School District serves approximately 3,000 students across four schools spread over 110 square miles of mountainous terrain. The district's unique geographic challenges have long created barriers to accessing mental health support, with few providers located in the community and transportation difficulties for both families and service providers.</p>
+                
+                <div class="image-container">
+                    <img src="/api/placeholder/600/350" alt="View of Rim of the World school with mountain backdrop">
+                </div>
+                
+                <h3>The Challenge</h3>
+                
+                <p>When Dr. Michelle Lopez became Director of Student Services in 2021, she quickly identified significant gaps in the district's mental health support system. "Our mountain geography creates unique challenges," she explains. "We have families spread across isolated communities, limited mental health providers in the area, and weather that can make travel treacherous for significant portions of the year."</p>
+                
+                <p>The challenges facing the district were multifaceted:</p>
+                
+                <p><strong>Geographic Isolation:</strong> Many families lived in remote areas with limited transportation options, making it difficult to access traditional in-person mental health services.</p>
+                
+                <p><strong>Weather Disruptions:</strong> Snow and ice frequently closed mountain roads during winter months, interrupting continuity of care for students receiving mental health support.</p>
+                
+                <p><strong>Provider Shortage:</strong> The mountain communities had few licensed mental health providers, creating long waitlists for services.</p>
+                
+                <p><strong>Resource Limitations:</strong> As a relatively small district, Rim of the World had limited funding for on-site mental health staff, with just two counselors and one school psychologist serving all four schools.</p>
+                
+                <p><strong>Community Stigma:</strong> In small, tight-knit mountain communities, concerns about privacy and stigma created barriers to seeking help.</p>
+                
+                <div class="quote">
+                    "Before we implemented our technology solutions, we were essentially trying to provide 21st century mental health support with 20th century tools. Our counselors were spending more time driving between schools than actually supporting students."
+                    <div class="quote-author">- Dr. Michelle Lopez, Director of Student Services</div>
+                </div>
+                
+                <h3>The Solution</h3>
+                
+                <p>Recognizing that traditional models of service delivery weren't working in their unique environment, Rim of the World USD developed a comprehensive technology-based approach to mental health support. Their solution focused on leveraging digital tools to overcome geographic barriers and maximize limited resources.</p>
+                
+                <p><strong>1. Comprehensive Telehealth Platform</strong></p>
+                
+                <p>The cornerstone of the district's approach was implementing a secure telehealth platform specifically designed for school-based mental health services. This system allowed:</p>
+                
+                <p>• Students to connect with counselors or external providers from any school site or from home during distance learning</p>
+                <p>• Counselors to efficiently serve students across multiple campuses without travel time</p>
+                <p>• Partnership with regional mental health providers who could serve students remotely</p>
+                <p>• Continuity of care during weather-related school closures</p>
+                <p>• Parent consultation sessions without requiring parents to travel to school sites</p>
+                
+                <p><strong>2. Student and Family Mobile App</strong></p>
+                
+                <p>To complement the telehealth system, the district launched a mobile application providing:</p>
+                
+                <p>• Secure messaging with school counselors</p>
+                <p>• Self-help resources tailored to common student concerns</p>
+                <p>• Skill-building activities and mood tracking tools</p>
+                <p>• Crisis support information accessible 24/7</p>
+                <p>• Anonymous reporting option for students concerned about peers</p>
+                <p>• Parent resources and education materials</p>
+                
+                <div class="image-container">
+                    <img src="/api/placeholder/600/350" alt="Student using mental health support app on tablet">
+                </div>
+                
+                <p><strong>3. Staff Digital Resource Hub</strong></p>
+                
+                <p>Recognizing that teachers are often the first to notice struggling students, the district created a comprehensive digital hub with:</p>
+                
+                <p>• Digital referral system for quickly connecting students with support</p>
+                <p>• Training videos on recognizing mental health warning signs</p>
+                <p>• Classroom-based intervention resources</p>
+                <p>• Documentation tools for tracking interventions and outcomes</p>
+                <p>• Consultation scheduling with mental health staff</p>
+                
+                <p><strong>4. Data Analytics System</strong></p>
+                
+                <p>To move from reactive to proactive approaches, the district implemented an early identification system that:</p>
+                
+                <p>• Integrated data from attendance, academic performance, behavior, and digital engagement</p>
+                <p>• Identified patterns that might indicate emerging mental health concerns</p>
+                <p>• Generated monthly reports for student support teams</p>
+                <p>• Tracked intervention effectiveness over time</p>
+                <p>• Helped allocate resources to areas of greatest need</p>
+                
+                <h3>Implementation Process</h3>
+                
+                <p>The district recognized that successfully implementing these technologies would require careful planning and a phased approach:</p>
+                
+                <p><strong>Phase 1: Infrastructure Assessment (Spring 2021)</strong></p>
+                
+                <p>The first step involved assessing the technological infrastructure across all school sites and in the broader community. The team discovered significant challenges:</p>
+                
+                <p>• Broadband access was uneven across mountain communities</p>
+                <p>• Two schools needed WiFi upgrades to support telehealth</p>
+                <p>• Many families lacked reliable internet at home</p>
+                
+                <p>To address these challenges, the district:</p>
+                
+                <p>• Upgraded WiFi capacity at all school sites</p>
+                <p>• Created dedicated telehealth spaces with high-quality connections</p>
+                <p>• Partnered with local libraries and community centers to create "WiFi zones"</p>
+                <p>• Secured grant funding for cellular-enabled tablets for families without internet</p>
+                
+                <p><strong>Phase 2: Pilot Program (Fall 2021)</strong></p>
+                
+                <p>The district began with a carefully designed pilot program:</p>
+                
+                <p>• Implemented telehealth at the high school and one elementary school</p>
+                <p>• Tested the staff referral system with select teacher teams</p>
+                <p>• Trained counselors on telehealth best practices</p>
+                <p>• Gathered feedback from initial user groups</p>
+                
+                <div class="quote">
+                    "The pilot phase was crucial. We discovered that our initial telehealth setup wasn't user-friendly enough for our younger students. We were able to make significant improvements before the full rollout."
+                    <div class="quote-author">- James Wilson, Technology Integration Specialist</div>
+                </div>
+                
+                <p><strong>Phase 3: Full Implementation (Spring 2022)</strong></p>
+                
+                <p>Based on lessons from the pilot, the district moved to full implementation:</p>
+                
+                <p>• Expanded telehealth to all four schools</p>
+                <p>• Launched the student/family mobile app</p>
+                <p>• Completed the staff resource hub</p>
+                <p>• Conducted comprehensive training for all stakeholders</p>
+                <p>• Established partnerships with regional mental health providers</p>
+                
+                <p><strong>Phase 4: Refinement and Expansion (2022-2023)</strong></p>
+                
+                <p>As the programs matured, the district focused on enhancements:</p>
+                
+                <p>• Added the data analytics component</p>
+                <p>• Expanded telehealth provider partnerships</p>
+                <p>• Created specialized virtual support groups</p>
+                <p>• Developed additional staff training modules</p>
+                <p>• Added parent education webinars</p>
+                
+                <div class="outcomes">
+                    <h3>Key Outcomes</h3>
+                    
+                    <div class="outcomes-grid">
+                        <div class="outcome-card">
+                            <h4>Increased Access</h4>
+                            <p>78% increase in students receiving some form of mental health support compared to pre-implementation</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Continuity of Care</h4>
+                            <p>96% of scheduled counseling sessions maintained during weather-related closures (compared to 10% previously)</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Staff Efficiency</h4>
+                            <p>Counselors report 65% increase in direct service time due to eliminated travel between sites</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Early Intervention</h4>
+                            <p>42% increase in proactive support interventions before crises develop</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Attendance Impact</h4>
+                            <p>18% reduction in chronic absenteeism among students receiving consistent mental health support</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Staff Confidence</h4>
+                            <p>87% of teachers report increased confidence in supporting student mental health needs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Challenges and Solutions</h3>
+                
+                <p>Despite the overall success, the implementation wasn't without challenges:</p>
+                
+                <p><strong>Technology Access:</strong> Some families continued to struggle with reliable internet access. The district addressed this by creating tech-equipped "wellness rooms" at each school site that students and families could use by appointment, even outside school hours.</p>
+                
+                <p><strong>Privacy Concerns:</strong> In small communities, families worried about confidentiality. The district emphasized the security features of their platforms and offered options for students to connect with providers outside the immediate community.</p>
+                
+                <p><strong>Staff Adaptation:</strong> Some staff members were initially resistant to the new digital tools. The district responded with personalized training sessions and created a "tech buddy" system pairing tech-savvy staff with those needing additional support.</p>
+                
+                <p><strong>Integration Issues:</strong> Early versions of the systems didn't communicate well with each other, creating duplicate work. The district worked with vendors to develop better integration between platforms.</p>
+                
+                <div class="highlights">
+                    <h3>Key Lessons Learned</h3>
+                    <ul class="highlights-list">
+                        <li><strong>Involve End Users in Selection:</strong> Having students, parents, and staff participate in platform selection increased buy-in and ensured the tools met actual needs.</li>
+                        <li><strong>Address Infrastructure First:</strong> Ensuring adequate technology infrastructure was a critical foundation before implementing any new systems.</li>
+                        <li><strong>Customize for Age Groups:</strong> Different interfaces and approaches were needed for elementary versus secondary students.</li>
+                        <li><strong>Provide Ongoing Training:</strong> Initial training wasn't enough; ongoing support and refresher sessions were essential for success.</li>
+                        <li><strong>Don't Neglect the Human Element:</strong> Technology worked best when supporting human connections, not replacing them.</li>
+                    </ul>
+                </div>
+                
+                <h3>Future Directions</h3>
+                
+                <p>Building on their success, Rim of the World USD is now exploring:</p>
+                
+                <p><strong>Virtual Reality Applications:</strong> Piloting VR technology for anxiety management and social skills development</p>
+                
+                <p><strong>Regional Collaboration:</strong> Creating a shared telehealth provider network with neighboring mountain districts</p>
+                
+                <p><strong>Student Leadership:</strong> Expanding the role of student technology ambassadors in designing and implementing mental health resources</p>
+                
+                <p><strong>Preventative Programming:</strong> Using data analytics to develop targeted preventative programs for at-risk student groups</p>
+                
+                <div class="quote">
+                    "What started as a solution to geographic barriers has evolved into a comprehensive approach that actually provides better support than our previous in-person model. We're reaching more students, identifying needs earlier, and creating sustainable systems that will serve our mountain communities for years to come."
+                    <div class="quote-author">- Superintendent Robert Chen, Rim of the World Unified School District</div>
+                </div>
+                
+                <p>Through innovative use of technology, Rim of the World USD has demonstrated that rural districts can overcome geographic barriers to provide comprehensive mental health support. Their model offers valuable lessons for other districts facing similar challenges in ensuring all students have access to essential mental health services regardless of location.</p>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Chat Bubble -->
+    <button id="floatingChatButton" class="chat-bubble">💬</button>
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="chat-modal hidden">
+    <div class="chat-header">
+        <span>Ask Us Anything</span>
+        <button id="closeChat" class="close-button">✕</button>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p id="initialPrompt"><em>Hi! How can we help you today?</em></p>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button id="sendMessage">Send</button>
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>K-12 Mental Health Tech</h3>
+                    <p>Supporting student wellbeing through effective technology solutions.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Guides & Toolkits</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                <p>&copy; 2025 K-12 Mental Health Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

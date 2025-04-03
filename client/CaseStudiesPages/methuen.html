@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/styles.css">
+    <title>K-12 Mental Health Tech | Supporting Student Wellbeing</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav class="nav-container">
+                <a href="client/index.html" class="logo">K-12 Mental Health Tech</a>
+                <button class="mobile-toggle">☰</button>
+                <ul class="nav-links">
+                    <li><a href="/client/aboutus.html">About</a></li>
+                
+                    
+                    <li class="dropdown">
+                        <a href="#features" class="dropdown-toggle">
+                            Explore <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tutorials"> Assess Student Needs</a></li>
+                            <li><a href="#docs">Plan for Stakeholder Engagement</a></li>
+                            <li><a href="#tools">Select Relevant Solutions</a></li>
+                            <li><a href="#tools">Develop a Funding Strategy</a></li>
+                            <li><a href="#tools">Implement your Chosen Solution</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Case Studies  <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/client/CaseStudiesPages/methuen.html">Methuen</a></li>
+                            <li><a href="/client/CaseStudiesPages/case2.html">Rim of the World Unified</a></li>
+                            <li><a href="/client/CaseStudiesPages/case3.html">Uplift Education</a></li>
+                            <li><a href="/client/CaseStudiesPages/case4.html">Judson ISD</a></li>
+                            <li><a href="/client/CaseStudiesPages/case5.html">Cherry Creek</a></li>
+
+
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    
+     
+    <!-- Resources Section -->
+    <!-- <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-heading">Explore Common Student Mental Health Needs</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>Develop Life and Character-Building Skills</h3>
+                        <p>Explore practices to support life and character-building skills development.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>Technology Implementation</h3>
+                        <p>Best practices for implementing mental health technology in diverse school environments.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>App Evaluation Toolkit</h3>
+                        <p>Tools to help schools evaluate and select appropriate mental health applications.</p>
+                        <a href="#" class="btn">Access Toolkit</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="resource-content">
+                        <h3>Webinar Series</h3>
+                        <p>Recorded webinars featuring experts in school mental health technology.</p>
+                        <a href="#" class="btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <style>
+       
+        
+        .case-study {
+            padding: 60px 0;
+        }
+        
+        .case-study-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+        
+        .sidebar {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        .sidebar h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .sidebar-info {
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .sidebar-info p, .sidebar-info ul {
+            font-size: 0.95rem;
+        }
+        
+        .sidebar-info ul {
+            list-style-position: inside;
+            margin-top: 8px;
+        }
+        
+        .sidebar-info ul li {
+            margin-bottom: 5px;
+        }
+        
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+        
+        .main-content h3 {
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+            color: var(--secondary-color);
+        }
+        
+        .main-content p {
+            margin-bottom: 20px;
+        }
+        
+        .quote {
+            background-color: var(--light-gray);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        .quote-author {
+            font-weight: bold;
+            margin-top: 10px;
+            font-style: normal;
+        }
+        
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .outcomes {
+            margin: 40px 0;
+            padding: 30px;
+            background-color: var(--light-gray);
+            border-radius: 5px;
+        }
+        
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .outcome-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .outcome-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        /* footer {
+            background-color: var(--light-gray);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        
+        .copyright {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .case-study-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        } */
+    </style>
+
+    <!-- <header>
+        <div class="container header-container">
+            <div class="logo">K12 Mental Health Tech</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Methuen Public Schools Case Study</h1>
+            <p>How Methuen Public Schools leveraged technology to transform their mental health support services</p>
+        </div>
+    </section>
+    
+    <section class="case-study">
+        <div class="container case-study-container">
+            <div class="sidebar">
+                <h3>District Profile</h3>
+                
+                <div class="sidebar-info">
+                    <h4>Location</h4>
+                    <p>Methuen, Massachusetts</p>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Size</h4>
+                    <p>~4,000 students</p>
+                    <p>6 schools (1 high school, 1 middle school, 4 elementary schools)</p>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Demographics</h4>
+                    <ul>
+                        <li>52% Hispanic/Latino</li>
+                        <li>42% White</li>
+                        <li>3% Black/African American</li>
+                        <li>3% Asian/Other</li>
+                        <li>45% Economically Disadvantaged</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Key Challenges</h4>
+                    <ul>
+                        <li>Rising student mental health concerns</li>
+                        <li>Limited mental health staff resources</li>
+                        <li>Inefficient referral processes</li>
+                        <li>Difficulty tracking intervention effectiveness</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-info">
+                    <h4>Technology Implemented</h4>
+                    <ul>
+                        <li>Digital screening system</li>
+                        <li>Mental health referral platform</li>
+                        <li>Data analytics dashboard</li>
+                        <li>Virtual counseling options</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h2>Transforming Mental Health Support Through Technology</h2>
+                
+                <p>In 2022, Methuen Public Schools faced growing challenges in addressing student mental health needs. With limited resources and increasing demand for services, district leaders recognized the need for innovative solutions to better support their diverse student population.</p>
+                
+                <div class="image-container">
+                    <img src="/api/placeholder/600/350" alt="Methuen Public Schools building">
+                </div>
+                
+                <h3>The Challenge</h3>
+                
+                <p>Methuen Public Schools, like many districts across the country, was experiencing a significant increase in student mental health concerns following the COVID-19 pandemic. Their existing support system struggled to efficiently identify students in need, coordinate interventions, and track outcomes.</p>
+                
+                <p>With a counselor-to-student ratio exceeding recommended levels and rising referrals for mental health support, the district needed to find ways to maximize their limited resources and ensure no student fell through the cracks.</p>
+                
+                <div class="quote">
+                    "We were seeing more and more students coming to us with anxiety, depression, and other mental health challenges. Our traditional methods of identifying and supporting these students simply couldn't keep pace with the growing need."
+                    <div class="quote-author">- Dr. Maria Rodriguez, Director of Student Services</div>
+                </div>
+                
+                <h3>The Solution</h3>
+                
+                <p>After a comprehensive needs assessment, Methuen Public Schools implemented a multi-faceted technology approach to transform their mental health support services:</p>
+                
+                <p><strong>1. Universal Screening System:</strong> Adopted a digital screening tool that regularly assesses all students for potential mental health concerns, enabling early identification and intervention.</p>
+                
+                <p><strong>2. Streamlined Referral Platform:</strong> Implemented a digital referral system that allows teachers, parents, and students to easily submit concerns, reducing delays in connecting students with support.</p>
+                
+                <p><strong>3. Resource Mapping Dashboard:</strong> Created a centralized database of available resources, making it easier for staff to match students with appropriate interventions both within the school and in the community.</p>
+                
+                <p><strong>4. Virtual Support Options:</strong> Expanded access to mental health services through telehealth counseling and digital self-help resources, particularly beneficial for students with transportation challenges or those preferring more discrete support options.</p>
+                
+                <p><strong>5. Data Analytics System:</strong> Developed a comprehensive data tracking system to monitor intervention effectiveness and student progress over time.</p>
+                
+                <div class="image-container">
+                    <img src="/api/placeholder/600/350" alt="Students using digital mental health resources">
+                </div>
+                
+                <h3>Implementation Process</h3>
+                
+                <p>The district took a phased approach to implementing these technological solutions:</p>
+                
+                <p><strong>Phase 1 (Summer 2022):</strong> Conducted a comprehensive needs assessment and selected appropriate technology platforms.</p>
+                
+                <p><strong>Phase 2 (Fall 2022):</strong> Piloted the digital screening and referral systems at the high school and one elementary school.</p>
+                
+                <p><strong>Phase 3 (Winter 2022-2023):</strong> Expanded implementation to all schools and introduced the resource mapping dashboard.</p>
+                
+                <p><strong>Phase 4 (Spring 2023):</strong> Added virtual support options and refined the data analytics system based on initial feedback.</p>
+                
+                <p><strong>Phase 5 (2023-2024 School Year):</strong> Full implementation across the district with ongoing refinements based on data and feedback.</p>
+                
+                <div class="quote">
+                    "Taking a methodical approach to implementation was crucial. It allowed us to test each component, gather feedback, and make necessary adjustments before scaling up to the entire district."
+                    <div class="quote-author">- James Chen, Technology Integration Specialist</div>
+                </div>
+                
+                <h3>Challenges and Solutions</h3>
+                
+                <p>The implementation process wasn't without challenges:</p>
+                
+                <p><strong>Staff Adoption:</strong> Some staff members were initially hesitant to learn new systems. The district addressed this by providing comprehensive training, creating "technology champions" at each school, and emphasizing how the technology would ultimately save time.</p>
+                
+                <p><strong>Data Privacy Concerns:</strong> Parents and staff expressed concerns about student data privacy. The district responded by selecting platforms with strong security measures, creating clear data governance policies, and communicating transparently with families about data collection and use.</p>
+                
+                <p><strong>Technical Integration:</strong> Integrating multiple systems proved challenging initially. The district worked closely with vendors to create streamlined workflows and single sign-on capabilities wherever possible.</p>
+                
+                <div class="outcomes">
+                    <h3>Key Outcomes</h3>
+                    
+                    <div class="outcomes-grid">
+                        <div class="outcome-card">
+                            <h4>Improved Identification</h4>
+                            <p>68% increase in early identification of students with mental health needs compared to the previous year</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Faster Response Times</h4>
+                            <p>Average time from referral to first intervention reduced from 14 days to 3 days</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Expanded Access</h4>
+                            <p>35% increase in the number of students receiving some form of mental health support</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Staff Efficiency</h4>
+                            <p>Counselors report saving an average of 5-7 hours per week on administrative tasks</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Improved Outcomes</h4>
+                            <p>22% reduction in chronic absenteeism among students receiving targeted mental health support</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <h4>Parent Engagement</h4>
+                            <p>52% increase in parent involvement in student mental health support planning</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Lessons Learned</h3>
+                
+                <p>Through this implementation process, Methuen Public Schools identified several key lessons that could benefit other districts:</p>
+                
+                <p><strong>1. Start with Clear Goals:</strong> Begin by clearly defining what success looks like and align technology choices with those goals.</p>
+                
+                <p><strong>2. Involve Stakeholders Early:</strong> Include teachers, counselors, parents, and even students in the selection and implementation process to increase buy-in.</p>
+                
+                <p><strong>3. Provide Adequate Training:</strong> Invest time in comprehensive professional development and create ongoing support mechanisms.</p>
+                
+                <p><strong>4. Maintain Human Connection:</strong> Use technology to enhance, not replace, human relationships and support.</p>
+                
+                <p><strong>5. Collect and Use Data:</strong> Continuously gather data on usage and outcomes to refine implementation and demonstrate impact.</p>
+                
+                <div class="quote">
+                    "Technology has transformed our approach to student mental health, but it's important to remember that these tools support our work—they don't do the work for us. The human connection remains at the center of everything we do."
+                    <div class="quote-author">- Principal Sarah Johnson, Methuen High School</div>
+                </div>
+                
+                <h3>Future Directions</h3>
+                
+                <p>Building on their success, Methuen Public Schools is now exploring:</p>
+                
+                <p><strong>1. AI-Enhanced Early Warning Systems:</strong> Using artificial intelligence to better predict which students might need additional support based on a variety of data points.</p>
+                
+                <p><strong>2. Expanded Peer Support Programs:</strong> Developing digital platforms to facilitate and monitor peer mentoring and support programs.</p>
+                
+                <p><strong>3. Parent Resources:</strong> Creating a parent portal with resources, training, and direct communication channels with school mental health staff.</p>
+                
+                <p>Through their innovative use of technology, Methuen Public Schools has demonstrated how digital tools can help districts overcome resource limitations and provide more effective mental health support to students.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Resources</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="copyright">
+                © 2025 K12 Mental Health Tech. All Rights Reserved.
+            </div>
+        </div>
+    </footer> -->
+
+    <script>
+        // JavaScript for enhanced interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for in-page links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add hover effect to navigation items
+            const navItems = document.querySelectorAll('nav ul li a');
+            navItems.forEach(item => {
+                item.addEventListener('mouseover', function() {
+                    this.style.color = '#0d6efd';
+                });
+                
+                item.addEventListener('mouseout', function() {
+                    this.style.color = '#333';
+                });
+            });
+            
+            // Add responsive toggle for mobile navigation (simplified version)
+            const logo = document.querySelector('.logo');
+            const nav = document.querySelector('nav');
+            
+            if (window.innerWidth <= 768) {
+                nav.style.display = 'none';
+                let navVisible = false;
+                
+                logo.addEventListener('click', function() {
+                    navVisible = !navVisible;
+                    nav.style.display = navVisible ? 'block' : 'none';
+                });
+            }
+        });
+    </script>
+
+
+    <!-- Chat Bubble -->
+    <button id="floatingChatButton" class="chat-bubble">💬</button>
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="chat-modal hidden">
+    <div class="chat-header">
+        <span>Ask Us Anything</span>
+        <button id="closeChat" class="close-button">✕</button>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p id="initialPrompt"><em>Hi! How can we help you today?</em></p>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button id="sendMessage">Send</button>
+    </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>K-12 Mental Health Tech</h3>
+                    <p>Supporting student wellbeing through effective technology solutions.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Guides & Toolkits</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                <p>&copy; 2025 K-12 Mental Health Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
