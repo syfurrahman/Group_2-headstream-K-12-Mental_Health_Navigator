@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <nav class="nav-container">
-                <a href="client/index.html" class="logo">K-12 Mental Health Tech</a>
+                <a href="/client/index.html" class="logo">K-12 Mental Health Tech</a>
                 <button class="mobile-toggle">☰</button>
                 <ul class="nav-links">
                     <li><a href="/client/aboutus.html">About</a></li>
@@ -45,57 +45,36 @@
                         </ul>
                     </li>
                     
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/client/index.html#contact">Contact</a></li>
+
                 </ul>
                 
             </nav>
         </div>
     </header>
     
-     
-    <!-- Resources Section -->
-    <!-- <section class="resources" id="resources">
-        <div class="container">
-            <h2 class="section-heading">Explore Common Student Mental Health Needs</h2>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
-                    <div class="resource-content">
-                        <h3>Develop Life and Character-Building Skills</h3>
-                        <p>Explore practices to support life and character-building skills development.</p>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
-                    <div class="resource-content">
-                        <h3>Technology Implementation</h3>
-                        <p>Best practices for implementing mental health technology in diverse school environments.</p>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
-                    <div class="resource-content">
-                        <h3>App Evaluation Toolkit</h3>
-                        <p>Tools to help schools evaluate and select appropriate mental health applications.</p>
-                        <a href="#" class="btn">Access Toolkit</a>
-                    </div>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-img" style="background-image: url('/api/placeholder/400/200');"></div>
-                    <div class="resource-content">
-                        <h3>Webinar Series</h3>
-                        <p>Recorded webinars featuring experts in school mental health technology.</p>
-                        <a href="#" class="btn">Watch Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <style>
-       
+        :root {
+        --primary-color: #0057a3;
+        }
+
+        @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #ffffff;
+        }
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .hero-logo {
+            max-width: 150px;
+            margin-bottom: 30px;
+        }
         
         .case-study {
             padding: 60px 0;
@@ -208,62 +187,9 @@
             margin-bottom: 10px;
         }
         
-        /* footer {
-            background-color: var(--light-gray);
-            padding: 40px 0;
-            text-align: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-        
-        .copyright {
-            color: var(--dark-gray);
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .case-study-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .header-container {
-                flex-direction: column;
-            }
-            
-            nav ul {
-                margin-top: 20px;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-        } */
+   
     </style>
 
-    <!-- <header>
-        <div class="container header-container">
-            <div class="logo">K12 Mental Health Tech</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
-    
     <section class="hero">
         <div class="container">
             <h1>Methuen Public Schools Case Study</h1>
@@ -325,7 +251,7 @@
                 <p>In 2022, Methuen Public Schools faced growing challenges in addressing student mental health needs. With limited resources and increasing demand for services, district leaders recognized the need for innovative solutions to better support their diverse student population.</p>
                 
                 <div class="image-container">
-                    <img src="/api/placeholder/600/350" alt="Methuen Public Schools building">
+                    <img src="/client/src/men.png" alt="Methuen Public Schools building">
                 </div>
                 
                 <h3>The Challenge</h3>
@@ -354,7 +280,7 @@
                 <p><strong>5. Data Analytics System:</strong> Developed a comprehensive data tracking system to monitor intervention effectiveness and student progress over time.</p>
                 
                 <div class="image-container">
-                    <img src="/api/placeholder/600/350" alt="Students using digital mental health resources">
+                    <img src="/client/src/graph-removebg-preview.png" alt="Students using digital mental health resources">
                 </div>
                 
                 <h3>Implementation Process</h3>

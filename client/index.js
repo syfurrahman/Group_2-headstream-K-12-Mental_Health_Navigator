@@ -112,3 +112,73 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+  // Simple JavaScript for interactive elements
+  document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            if (targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Mobile navigation toggle
+    const createMobileMenu = () => {
+        const nav = document.querySelector('nav');
+        const header = document.querySelector('header');
+        
+        const menuToggle = document.createElement('button');
+        menuToggle.textContent = '☰ Menu';
+        menuToggle.classList.add('mobile-menu-toggle');
+        menuToggle.style.display = 'none';
+        menuToggle.style.padding = '10px 15px';
+        menuToggle.style.background = '#0066cc';
+        menuToggle.style.color = '#fff';
+        menuToggle.style.border = 'none';
+        menuToggle.style.borderRadius = '4px';
+        menuToggle.style.cursor = 'pointer';
+        menuToggle.style.marginTop = '10px';
+        
+        header.querySelector('.logo-container').after(menuToggle);
+        
+        menuToggle.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        const updateMenu = () => {
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+                nav.style.display = 'none';
+            } else {
+                menuToggle.style.display = 'none';
+                nav.style.display = 'block';
+            }
+        };
+        
+        window.addEventListener('resize', updateMenu);
+        updateMenu();
+    };
+    
+    createMobileMenu();
+    
+    // Add active class to current page in navigation
+    const currentPage = window.location.pathname.split('/').pop();
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        if (link.getAttribute('href').indexOf(currentPage) !== -1) {
+            link.style.color = '#0066cc';
+            link.style.fontWeight = '700';
+        }
+    });
+});
+
