@@ -64,6 +64,11 @@ header {
     position: relative; 
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -770,3 +775,28 @@ footer {
           grid-template-columns: 1fr;
       }
   }
+
+
+    .text-image-container {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin-bottom: 20px; 
+    }
+
+    .text-content {
+        flex: 1; 
+        margin-right: 20px; 
+    }
+
+    .content-img {
+        width: 300px; 
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .key-points {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 10px 0;
+    }
