@@ -53,396 +53,615 @@
         </div>
     </header>
     
-
+    <title>Methuen Public Schools Case Study</title>
     <style>
-        :root {
-        --primary-color: #0057a3;
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      
+     
+ 
+      .hero {
+        background-color: #003B70;
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      
+      .hero h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 600;
+      }
+      
+      .subtitle {
+        font-size: 18px;
+        opacity: 0.9;
+        margin-top: 10px;
+      }
+      
+      .district-info {
+        background-color: #F7F9FA;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .info-item {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+        text-align: center;
+      }
+      
+      .info-label {
+        font-weight: 600;
+        color: #003B70;
+        margin-bottom: 5px;
+      }
+      
+      .info-value {
+        font-size: 18px;
+      }
+      
+      .section {
+        margin-bottom: 50px;
+      }
+      
+      .section-title {
+        color: #003B70;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .section-title::after {
+        content: '';
+        height: 3px;
+        background-color: #00A5B5;
+        flex-grow: 1;
+        margin-left: 15px;
+      }
+      
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
+      .card {
+        background-color: #F7F9FA;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        overflow: hidden;
+        width: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 20px;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .card-header {
+        background-color: #00A5B5;
+        color: white;
+        padding: 15px 20px;
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .card-icon {
+        background-color: white;
+        color: #00A5B5;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+      
+      .card-body {
+        padding: 20px;
+      }
+      
+      .flashcard {
+        margin-bottom: 20px;
+      }
+      
+      .flashcard:last-child {
+        margin-bottom: 0;
+      }
+      
+      .question {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #003B70;
+      }
+      
+      .answer {
+        color: #505050;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #00A5B5;
+      }
+      
+      .highlight-box {
+        background-color: #E3F6F7;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0;
+        border-left: 4px solid #00A5B5;
+      }
+      
+      .highlight-title {
+        color: #003B70;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      
+      .highlight-content {
+        color: #505050;
+      }
+      
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 30px 0;
+      }
+      
+      .stat-item {
+        flex: 1;
+        min-width: 200px;
+        background-color: #003B70;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      
+      .stat-value {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      
+      .stat-label {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+      
+      .quote {
+        background-color: #F7F9FA;
+        border-left: 4px solid #00A5B5;
+        padding: 20px;
+        margin: 30px 0;
+        font-style: italic;
+        color: #505050;
+      }
+      
+      .quote-text {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .quote-author {
+        font-weight: 600;
+        color: #003B70;
+        font-style: normal;
+      }
+      
+      .implementation-steps {
+        margin: 30px 0;
+      }
+      
+      .step {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: flex-start;
+      }
+      
+      .step-number {
+        background-color: #00A5B5;
+        color: white;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+      
+      .step-content {
+        flex-grow: 1;
+      }
+      
+      .step-title {
+        font-weight: 600;
+        color: #003B70;
+        margin-bottom: 5px;
+      }
+      
+      
+      @media (min-width: 768px) {
+        .card {
+          width: calc(50% - 10px);
         }
-
-        @media (prefers-color-scheme: dark) {
-        :root {
-            --primary-color: #ffffff;
-        }
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: white;
-        }
-        
-        .hero-logo {
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-        
-        .case-study {
-            padding: 60px 0;
-        }
-        
-        .case-study-container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 40px;
-        }
-        
-        .sidebar {
-            background-color: var(--light-gray);
-            padding: 30px;
-            border-radius: 5px;
-        }
-        
-        .sidebar h3 {
-            margin-bottom: 20px;
-            font-size: 1.3rem;
-        }
-        
-        .sidebar-info {
-            margin-bottom: 30px;
-        }
-        
-        .sidebar-info h4 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-        
-        .sidebar-info p, .sidebar-info ul {
-            font-size: 0.95rem;
-        }
-        
-        .sidebar-info ul {
-            list-style-position: inside;
-            margin-top: 8px;
-        }
-        
-        .sidebar-info ul li {
-            margin-bottom: 5px;
-        }
-        
-        .main-content h2 {
-            font-size: 2rem;
-            margin-bottom: 25px;
-            color: var(--primary-color);
-        }
-        
-        .main-content h3 {
-            font-size: 1.5rem;
-            margin: 30px 0 15px;
-            color: var(--secondary-color);
-        }
-        
-        .main-content p {
-            margin-bottom: 20px;
-        }
-        
-        .quote {
-            background-color: var(--light-gray);
-            border-left: 4px solid var(--primary-color);
-            padding: 20px;
-            margin: 30px 0;
-            font-style: italic;
-        }
-        
-        .quote-author {
-            font-weight: bold;
-            margin-top: 10px;
-            font-style: normal;
-        }
-        
-        .image-container {
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        .image-container img {
-            max-width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .outcomes {
-            margin: 40px 0;
-            padding: 30px;
-            background-color: var(--light-gray);
-            border-radius: 5px;
-        }
-        
-        .outcomes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .outcome-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .outcome-card h4 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
-   
+      }
     </style>
-
-    <section class="hero">
-        <div class="container">
-            <h1>Methuen Public Schools Case Study</h1>
-            <p>How Methuen Public Schools leveraged technology to transform their mental health support services</p>
-        </div>
-    </section>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Methuen Public Schools</h1>
+      <div class="subtitle">Mental Health Technology Implementation Case Study</div>
+    </div>
     
-    <section class="case-study">
-        <div class="container case-study-container">
-            <div class="sidebar">
-                <h3>District Profile</h3>
-                
-                <div class="sidebar-info">
-                    <h4>Location</h4>
-                    <p>Methuen, Massachusetts</p>
-                </div>
-                
-                <div class="sidebar-info">
-                    <h4>Size</h4>
-                    <p>~4,000 students</p>
-                    <p>6 schools (1 high school, 1 middle school, 4 elementary schools)</p>
-                </div>
-                
-                <div class="sidebar-info">
-                    <h4>Demographics</h4>
-                    <ul>
-                        <li>52% Hispanic/Latino</li>
-                        <li>42% White</li>
-                        <li>3% Black/African American</li>
-                        <li>3% Asian/Other</li>
-                        <li>45% Economically Disadvantaged</li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar-info">
-                    <h4>Key Challenges</h4>
-                    <ul>
-                        <li>Rising student mental health concerns</li>
-                        <li>Limited mental health staff resources</li>
-                        <li>Inefficient referral processes</li>
-                        <li>Difficulty tracking intervention effectiveness</li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar-info">
-                    <h4>Technology Implemented</h4>
-                    <ul>
-                        <li>Digital screening system</li>
-                        <li>Mental health referral platform</li>
-                        <li>Data analytics dashboard</li>
-                        <li>Virtual counseling options</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="main-content">
-                <h2>Transforming Mental Health Support Through Technology</h2>
-                
-                <p>In 2022, Methuen Public Schools faced growing challenges in addressing student mental health needs. With limited resources and increasing demand for services, district leaders recognized the need for innovative solutions to better support their diverse student population.</p>
-                
-                <div class="image-container">
-                    <img src="/client/src/men.png" alt="Methuen Public Schools building">
-                </div>
-                
-                <h3>The Challenge</h3>
-                
-                <p>Methuen Public Schools, like many districts across the country, was experiencing a significant increase in student mental health concerns following the COVID-19 pandemic. Their existing support system struggled to efficiently identify students in need, coordinate interventions, and track outcomes.</p>
-                
-                <p>With a counselor-to-student ratio exceeding recommended levels and rising referrals for mental health support, the district needed to find ways to maximize their limited resources and ensure no student fell through the cracks.</p>
-                
-                <div class="quote">
-                    "We were seeing more and more students coming to us with anxiety, depression, and other mental health challenges. Our traditional methods of identifying and supporting these students simply couldn't keep pace with the growing need."
-                    <div class="quote-author">- Dr. Maria Rodriguez, Director of Student Services</div>
-                </div>
-                
-                <h3>The Solution</h3>
-                
-                <p>After a comprehensive needs assessment, Methuen Public Schools implemented a multi-faceted technology approach to transform their mental health support services:</p>
-                
-                <p><strong>1. Universal Screening System:</strong> Adopted a digital screening tool that regularly assesses all students for potential mental health concerns, enabling early identification and intervention.</p>
-                
-                <p><strong>2. Streamlined Referral Platform:</strong> Implemented a digital referral system that allows teachers, parents, and students to easily submit concerns, reducing delays in connecting students with support.</p>
-                
-                <p><strong>3. Resource Mapping Dashboard:</strong> Created a centralized database of available resources, making it easier for staff to match students with appropriate interventions both within the school and in the community.</p>
-                
-                <p><strong>4. Virtual Support Options:</strong> Expanded access to mental health services through telehealth counseling and digital self-help resources, particularly beneficial for students with transportation challenges or those preferring more discrete support options.</p>
-                
-                <p><strong>5. Data Analytics System:</strong> Developed a comprehensive data tracking system to monitor intervention effectiveness and student progress over time.</p>
-                
-                <div class="image-container">
-                    <img src="/client/src/graph-removebg-preview.png" alt="Students using digital mental health resources">
-                </div>
-                
-                <h3>Implementation Process</h3>
-                
-                <p>The district took a phased approach to implementing these technological solutions:</p>
-                
-                <p><strong>Phase 1 (Summer 2022):</strong> Conducted a comprehensive needs assessment and selected appropriate technology platforms.</p>
-                
-                <p><strong>Phase 2 (Fall 2022):</strong> Piloted the digital screening and referral systems at the high school and one elementary school.</p>
-                
-                <p><strong>Phase 3 (Winter 2022-2023):</strong> Expanded implementation to all schools and introduced the resource mapping dashboard.</p>
-                
-                <p><strong>Phase 4 (Spring 2023):</strong> Added virtual support options and refined the data analytics system based on initial feedback.</p>
-                
-                <p><strong>Phase 5 (2023-2024 School Year):</strong> Full implementation across the district with ongoing refinements based on data and feedback.</p>
-                
-                <div class="quote">
-                    "Taking a methodical approach to implementation was crucial. It allowed us to test each component, gather feedback, and make necessary adjustments before scaling up to the entire district."
-                    <div class="quote-author">- James Chen, Technology Integration Specialist</div>
-                </div>
-                
-                <h3>Challenges and Solutions</h3>
-                
-                <p>The implementation process wasn't without challenges:</p>
-                
-                <p><strong>Staff Adoption:</strong> Some staff members were initially hesitant to learn new systems. The district addressed this by providing comprehensive training, creating "technology champions" at each school, and emphasizing how the technology would ultimately save time.</p>
-                
-                <p><strong>Data Privacy Concerns:</strong> Parents and staff expressed concerns about student data privacy. The district responded by selecting platforms with strong security measures, creating clear data governance policies, and communicating transparently with families about data collection and use.</p>
-                
-                <p><strong>Technical Integration:</strong> Integrating multiple systems proved challenging initially. The district worked closely with vendors to create streamlined workflows and single sign-on capabilities wherever possible.</p>
-                
-                <div class="outcomes">
-                    <h3>Key Outcomes</h3>
-                    
-                    <div class="outcomes-grid">
-                        <div class="outcome-card">
-                            <h4>Improved Identification</h4>
-                            <p>68% increase in early identification of students with mental health needs compared to the previous year</p>
-                        </div>
-                        
-                        <div class="outcome-card">
-                            <h4>Faster Response Times</h4>
-                            <p>Average time from referral to first intervention reduced from 14 days to 3 days</p>
-                        </div>
-                        
-                        <div class="outcome-card">
-                            <h4>Expanded Access</h4>
-                            <p>35% increase in the number of students receiving some form of mental health support</p>
-                        </div>
-                        
-                        <div class="outcome-card">
-                            <h4>Staff Efficiency</h4>
-                            <p>Counselors report saving an average of 5-7 hours per week on administrative tasks</p>
-                        </div>
-                        
-                        <div class="outcome-card">
-                            <h4>Improved Outcomes</h4>
-                            <p>22% reduction in chronic absenteeism among students receiving targeted mental health support</p>
-                        </div>
-                        
-                        <div class="outcome-card">
-                            <h4>Parent Engagement</h4>
-                            <p>52% increase in parent involvement in student mental health support planning</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <h3>Lessons Learned</h3>
-                
-                <p>Through this implementation process, Methuen Public Schools identified several key lessons that could benefit other districts:</p>
-                
-                <p><strong>1. Start with Clear Goals:</strong> Begin by clearly defining what success looks like and align technology choices with those goals.</p>
-                
-                <p><strong>2. Involve Stakeholders Early:</strong> Include teachers, counselors, parents, and even students in the selection and implementation process to increase buy-in.</p>
-                
-                <p><strong>3. Provide Adequate Training:</strong> Invest time in comprehensive professional development and create ongoing support mechanisms.</p>
-                
-                <p><strong>4. Maintain Human Connection:</strong> Use technology to enhance, not replace, human relationships and support.</p>
-                
-                <p><strong>5. Collect and Use Data:</strong> Continuously gather data on usage and outcomes to refine implementation and demonstrate impact.</p>
-                
-                <div class="quote">
-                    "Technology has transformed our approach to student mental health, but it's important to remember that these tools support our work—they don't do the work for us. The human connection remains at the center of everything we do."
-                    <div class="quote-author">- Principal Sarah Johnson, Methuen High School</div>
-                </div>
-                
-                <h3>Future Directions</h3>
-                
-                <p>Building on their success, Methuen Public Schools is now exploring:</p>
-                
-                <p><strong>1. AI-Enhanced Early Warning Systems:</strong> Using artificial intelligence to better predict which students might need additional support based on a variety of data points.</p>
-                
-                <p><strong>2. Expanded Peer Support Programs:</strong> Developing digital platforms to facilitate and monitor peer mentoring and support programs.</p>
-                
-                <p><strong>3. Parent Resources:</strong> Creating a parent portal with resources, training, and direct communication channels with school mental health staff.</p>
-                
-                <p>Through their innovative use of technology, Methuen Public Schools has demonstrated how digital tools can help districts overcome resource limitations and provide more effective mental health support to students.</p>
-            </div>
+    <div class="container">
+      <div class="district-info">
+        <div class="info-item">
+          <div class="info-label">Location</div>
+          <div class="info-value">Methuen, Massachusetts</div>
         </div>
-    </section>
-    
-    <!-- <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Case Studies</a>
-                <a href="#">Resources</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="copyright">
-                © 2025 K12 Mental Health Tech. All Rights Reserved.
-            </div>
+        <div class="info-item">
+          <div class="info-label">District Size</div>
+          <div class="info-value">~7,000 Students</div>
         </div>
-    </footer> -->
-
-    <script>
-        // JavaScript for enhanced interactivity
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling for in-page links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Add hover effect to navigation items
-            const navItems = document.querySelectorAll('nav ul li a');
-            navItems.forEach(item => {
-                item.addEventListener('mouseover', function() {
-                    this.style.color = '#0d6efd';
-                });
-                
-                item.addEventListener('mouseout', function() {
-                    this.style.color = '#333';
-                });
-            });
-            
-            // Add responsive toggle for mobile navigation (simplified version)
-            const logo = document.querySelector('.logo');
-            const nav = document.querySelector('nav');
-            
-            if (window.innerWidth <= 768) {
-                nav.style.display = 'none';
-                let navVisible = false;
-                
-                logo.addEventListener('click', function() {
-                    navVisible = !navVisible;
-                    nav.style.display = navVisible ? 'block' : 'none';
-                });
-            }
-        });
-    </script>
+        <div class="info-item">
+          <div class="info-label">Schools</div>
+          <div class="info-value">9 Schools</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Implementation Year</div>
+          <div class="info-value">2023</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Challenge & Context</div>
+        <p>Methuen Public Schools serves approximately 7,000 students across 9 schools (5 elementary, 3 middle, and 1 high school) in Methuen, Massachusetts. The district faced rising mental health concerns among students, including increased anxiety, depression, and behavioral issues. This trend was exacerbated by the COVID-19 pandemic, which disrupted educational continuity and social support networks.</p>
+        
+        <p>The district's mental health support team, consisting of school counselors, psychologists, and social workers, was stretched thin trying to meet the growing demand for services. Documentation was largely paper-based or spread across multiple digital systems, making it difficult to track student needs, interventions, and outcomes effectively.</p>
+        
+        <div class="highlight-box">
+          <div class="highlight-title">Key Challenges</div>
+          <div class="highlight-content">
+            <ul>
+              <li>Increasing rates of student anxiety, depression, and behavioral concerns</li>
+              <li>Limited counseling staff relative to student needs</li>
+              <li>Inconsistent documentation and communication processes</li>
+              <li>Difficulty identifying at-risk students before crisis situations</li>
+              <li>Lack of centralized data to track interventions and outcomes</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="quote">
+          <div class="quote-text">"We were seeing more students in distress than ever before, but our systems weren't equipped to help us identify and support them efficiently. We needed a way to be more proactive rather than constantly reactive."</div>
+          <div class="quote-author">- Director of Student Support Services, Methuen Public Schools</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Solution & Implementation</div>
+        <p>After researching available options, Methuen Public Schools decided to implement a comprehensive digital mental health platform that would streamline screening, documentation, and care coordination. The selected platform included tools for universal mental health screening, progress monitoring, intervention tracking, and resource management.</p>
+        
+        <div class="implementation-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-title">Planning & Preparation (3 months)</div>
+              <p>The district formed a Mental Health Technology Committee with representatives from counseling, administration, IT, and teaching staff. This committee evaluated different technology options, developed implementation plans, and created privacy protocols.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-title">Pilot Implementation (4 months)</div>
+              <p>The district began with a pilot program at two schools - one elementary and one middle school. This phase included initial staff training, system customization, and data migration. The committee collected feedback regularly and made adjustments before broader rollout.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-title">District-Wide Implementation (6 months)</div>
+              <p>Following successful pilot results, the district expanded the implementation to all nine schools. This phase included comprehensive training for all counselors, psychologists, and social workers, along with awareness sessions for teachers and administrators.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <div class="step-title">Integration & Refinement (Ongoing)</div>
+              <p>The district continues to refine the system, adding new features and expanding its use. They established regular review periods to evaluate effectiveness and make adjustments based on user feedback and student outcomes data.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="highlight-box">
+          <div class="highlight-title">Key Implementation Strategies</div>
+          <div class="highlight-content">
+            <ul>
+              <li><strong>Phased Approach:</strong> Starting small with pilot schools allowed for troubleshooting before full-scale implementation</li>
+              <li><strong>Staff Champions:</strong> Identifying enthusiastic early adopters who could support their colleagues</li>
+              <li><strong>Comprehensive Training:</strong> Multiple training sessions with follow-up support</li>
+              <li><strong>Clear Communication:</strong> Regular updates to all stakeholders about implementation progress</li>
+              <li><strong>Data Integration:</strong> Working closely with IT to ensure smooth data flow between systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Results & Impact</div>
+        <p>After implementing the digital mental health platform district-wide for one academic year, Methuen Public Schools observed significant improvements in their ability to support student mental health needs.</p>
+        
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-value">35%</div>
+            <div class="stat-label">Increase in identifying at-risk students</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">42%</div>
+            <div class="stat-label">Improvement in counselor response times</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">28%</div>
+            <div class="stat-label">Reduction in crisis interventions</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">📊</span>KEY OUTCOMES
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">How did the system improve mental health support efficiency?</div>
+              <div class="answer">
+                <ul>
+                  <li>Streamlined documentation reduced paperwork time by approximately 30%</li>
+                  <li>Centralized data allowed for more effective resource allocation</li>
+                  <li>Improved communication between counselors, teachers, and families</li>
+                  <li>Enhanced ability to track intervention effectiveness and make data-driven decisions</li>
+                  <li>Better coordination of services and referrals to community partners</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">👨‍🎓</span>STUDENT IMPACT
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">How did students benefit from the technology implementation?</div>
+              <div class="answer">
+                <ul>
+                  <li>More students received support before reaching crisis levels</li>
+                  <li>Students had access to self-help resources through the platform</li>
+                  <li>Improved consistency in mental health support across all schools</li>
+                  <li>More equitable distribution of resources based on identified needs</li>
+                  <li>Reduced stigma through normalized mental health conversations</li>
+                  <li>Improved academic outcomes for students receiving mental health support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="quote">
+          <div class="quote-text">"The digital platform has transformed how we support students. We're catching issues earlier, spending more time on direct support rather than paperwork, and making more informed decisions about interventions. Most importantly, we're seeing better outcomes for our students."</div>
+          <div class="quote-author">- School Psychologist, Methuen High School</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Challenges & Solutions</div>
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">🧩</span>IMPLEMENTATION CHALLENGES
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">What challenges did Methuen face during implementation?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Initial staff resistance:</strong> Some counseling staff were hesitant to adopt new technology, preferring familiar paper-based systems</li>
+                  <li><strong>Data privacy concerns:</strong> Parents and staff raised questions about the security of sensitive mental health information</li>
+                  <li><strong>Technical integration issues:</strong> Difficulties connecting the new platform with existing student information systems</li>
+                  <li><strong>Time constraints:</strong> Finding adequate time for training during the busy school year</li>
+                  <li><strong>Consistency challenges:</strong> Ensuring all staff used the system in the same way across multiple schools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">💡</span>SOLUTIONS & ADAPTATIONS
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">How did Methuen overcome these challenges?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Dedicated training sessions:</strong> Multiple training opportunities with differentiated support for various comfort levels with technology</li>
+                  <li><strong>"Tech champions" program:</strong> Identifying early adopters who could support their colleagues</li>
+                  <li><strong>Clear privacy protocols:</strong> Developing and communicating comprehensive data privacy measures</li>
+                  <li><strong>IT support:</strong> Dedicated technical support during the implementation phase</li>
+                  <li><strong>Implementation handbook:</strong> Creating standardized protocols for system use across all schools</li>
+                  <li><strong>Gradual rollout:</strong> Introducing features incrementally to avoid overwhelming staff</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Sustainability & Future Plans</div>
+        <p>Methuen Public Schools has developed a comprehensive sustainability plan to ensure the long-term success of their mental health technology initiative.</p>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">🌱</span>SUSTAINABILITY STRATEGIES
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">How is Methuen ensuring long-term sustainability?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Secured ongoing funding:</strong> Allocated permanent budget lines for technology licenses and support</li>
+                  <li><strong>Established professional development:</strong> Integrated mental health technology training into the district's regular professional development program</li>
+                  <li><strong>Created data tracking systems:</strong> Regular analysis of usage data and outcomes to demonstrate value</li>
+                  <li><strong>Developed internal expertise:</strong> Trained staff members to serve as system administrators and trainers</li>
+                  <li><strong>Integrated with district initiatives:</strong> Connected the mental health platform with other district priorities like MTSS (Multi-Tiered System of Support)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">🔮</span>FUTURE PLANS
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">What are Methuen's plans for expanding their mental health technology initiative?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Family portal development:</strong> Creating access for parents/guardians to view resources and progress</li>
+                  <li><strong>Expanded preventative programming:</strong> Using data to develop targeted prevention initiatives</li>
+                  <li><strong>Community partner integration:</strong> Streamlining referrals to community mental health providers</li>
+                  <li><strong>Student self-help expansion:</strong> Developing more age-appropriate self-help resources within the platform</li>
+                  <li><strong>Peer support program:</strong> Training student leaders to provide basic support through the platform</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Lessons Learned & Recommendations</div>
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">💡</span>KEY LESSONS
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">What key lessons did Methuen learn through implementation?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Stakeholder buy-in is essential:</strong> Early involvement of counselors, teachers, and administrators in planning was crucial</li>
+                  <li><strong>Technology alone isn't enough:</strong> The system works best when combined with adequate staffing and proper training</li>
+                  <li><strong>Start small:</strong> The pilot phase was invaluable for troubleshooting and building momentum</li>
+                  <li><strong>Data drives improvement:</strong> Collecting baseline data and monitoring outcomes helped demonstrate value</li>
+                  <li><strong>Flexibility matters:</strong> Being willing to adapt implementation plans based on feedback improved adoption</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">🔍</span>RECOMMENDATIONS FOR OTHER DISTRICTS
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">What advice would Methuen give to other districts implementing mental health technology?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Clearly define goals:</strong> Establish specific objectives for what you want the technology to accomplish</li>
+                  <li><strong>Invest in training:</strong> Allocate sufficient time and resources for staff training and ongoing support</li>
+                  <li><strong>Address privacy concerns early:</strong> Develop clear data privacy protocols and communicate them to all stakeholders</li>
+                  <li><strong>Create champions:</strong> Identify enthusiastic early adopters who can help drive implementation</li>
+                  <li><strong>Measure impact:</strong> Collect both quantitative and qualitative data to assess effectiveness</li>
+                  <li><strong>Celebrate successes:</strong> Regularly share wins and positive outcomes to maintain momentum</li>
+                  <li><strong>Be patient:</strong> Full adoption and integration takes time; expect at least a full academic year for full implementation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Budget & Resources</div>
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">💰</span>BUDGET INFORMATION
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">How did Methuen fund their mental health technology initiative?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>Initial implementation:</strong> Funded through a combination of federal COVID relief funds and state mental health grants</li>
+                  <li><strong>Ongoing costs:</strong> Integrated into the district's annual technology and student support services budgets</li>
+                  <li><strong>Training costs:</strong> Utilized existing professional development allocations and train-the-trainer models</li>
+                  <li><strong>Hardware needs:</strong> Minimal additional hardware was required as the district already had adequate devices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">👥</span>STAFFING ADJUSTMENTS
+          </div>
+          <div class="card-body">
+            <div class="flashcard">
+              <div class="question">What staffing changes occurred with implementation?</div>
+              <div class="answer">
+                <ul>
+                  <li><strong>New position:</strong> Created a part-time Mental Health Technology Coordinator role</li>
+                  <li><strong>Role adjustments:</strong> Counselors spent less time on documentation and more on direct student support</li>
+                  <li><strong>Additional responsibilities:</strong> Identified "tech champions" at each school who received stipends for supporting colleagues</li>
+                  <li><strong>IT collaboration:</strong> Dedicated IT staff time for implementation and ongoing support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="highlight-box">
+        <div class="highlight-title">Key Takeaway</div>
+        <div class="highlight-content">Methuen Public Schools' experience demonstrates that with careful planning, stakeholder engagement, and phased implementation, digital mental health tools can significantly enhance a district's ability to support student mental health needs. The success of their initiative shows that technology, when properly implemented, can extend the reach and effectiveness of existing mental health staff and resources.</div>
+      </div>
+    </div>
 
 
     <!-- Chat Bubble -->
