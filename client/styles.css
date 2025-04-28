@@ -963,8 +963,8 @@ footer {
   display: inline-block;
 }
 
-.accordion.active .arrow {
-  transform: rotate(180deg);
+.accordion.active  .arrow::after  {
+  transform: "-";
 }
 .accordion:hover, .accordion.active {
   background-color: #f6d6dd;
