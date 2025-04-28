@@ -919,32 +919,73 @@ footer {
     color: #4a5568;
   }
   
-  /* Drop down content*/
-  .element-title {
-    font-size: 20px;
+  
+/* ACCORDION */
+.section-accordion {
+  margin-bottom: 2rem;
+  
+}
+.item-accordion{
+  cursor: pointer;
+    transition: background-color 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion {
+  font-size: 18px;
     margin-top: 30px; 
     padding-left: 20px; 
-    background-color: #c3e2ef;
+    background-color: #d9eff8;
     padding:10px;
     border-radius: 20px;
-    
-  }
-    /* Add hover effect */
-  .element-title:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    background-color: #b1bfce;
-  }
-
-  .section-dropdown {
-    margin-bottom: 2rem;
+    position: relative;
     cursor: pointer;
-    
-  }
-  .sec-dropdown-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-  }
-  .section-dropdown.active .sec-dropdown-content {
-    max-height: 1000px; 
-  }
+    transition: background-color 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion .arrow {
+  margin-left: 30rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.accordion.active .arrow {
+  transform: rotate(180deg);
+}
+.accordion:hover, .accordion.active {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgb(221, 239, 242);
+  border-radius: 20px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.panel ul {
+  margin-top: 10px;
+  padding-left: 40px; 
+}
+.panel-box {
+  background-color: #d9eff8;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  border-left: 4px solid #0497d2;
+  font-size: 18px;
+}
+.panel-box ul{
+  padding-left: 40px; 
+  margin-top: 20px;
+}
+.panel-box p{
+  padding-left: 12px;
+}
+.panel-content {
+  color: #505050;
+}
