@@ -181,4 +181,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.section-dropdown');
+    
+    dropdowns.forEach(function(dropdown) {
+        const title = dropdown.querySelector('.element-title');
+        
+        title.addEventListener('click', function() {
+            dropdown.classList.toggle('active');
+        });
+    });
+});
