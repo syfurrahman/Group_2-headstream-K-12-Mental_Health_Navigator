@@ -4,8 +4,6 @@ CSCI 499 Advance Capstone - Group 2: K-12 Mental Health Navigator
 Information about the project is available in this link 🔗: [Headstream](https://www.headstreaminnovation.com/procurement-program)
 
 
-# My React App  
-
 ## **Prerequisites**  
 Before running this project, make sure you have **Node.js** installed on your system.  
 
@@ -22,6 +20,12 @@ npm -v
 ### **2. Run code**  
 To run the file do these steps
 ```bash
-cd my-app
-npm install
-npm start
+cd client
+python3 -m http.server
+```
+
+Once you are done running: 
+Open the browser and go to:
+```bash
+http://localhost:8000
+```
