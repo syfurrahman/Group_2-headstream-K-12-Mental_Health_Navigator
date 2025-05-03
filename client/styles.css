@@ -129,7 +129,7 @@ header {
 .hero {
     position: relative; 
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('/client/src/main_page.jpg') center/cover no-repeat;
+                url('../src/main_page.jpg') center/cover no-repeat;
      
                 
     color: white;
