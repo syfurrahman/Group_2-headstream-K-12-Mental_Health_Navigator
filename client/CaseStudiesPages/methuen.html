@@ -44,8 +44,7 @@
 
                         </ul>
                     </li>
-                    
-                    <li><a href="client/index.html#contact">Contact</a></li>
+    
 
                 </ul>
                 
@@ -54,272 +53,35 @@
     </header>
     
     <title>Methuen Public Schools Case Study</title>
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #ffffff;
-        color: #333333;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-      }
-      
-     
- 
-      .hero {
-        background-color: #003B70;
-        color: white;
-        padding: 50px 20px;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      
-      .hero h1 {
-        margin: 0;
-        font-size: 36px;
-        font-weight: 600;
-      }
-      
-      .subtitle {
-        font-size: 18px;
-        opacity: 0.9;
-        margin-top: 10px;
-      }
-      
-      .district-info {
-        background-color: #F7F9FA;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      
-      .info-item {
-        flex: 1;
-        min-width: 200px;
-        margin: 10px;
-        text-align: center;
-      }
-      
-      .info-label {
-        font-weight: 600;
-        color: #003B70;
-        margin-bottom: 5px;
-      }
-      
-      .info-value {
-        font-size: 18px;
-      }
-      
-      .section {
-        margin-bottom: 50px;
-      }
-      
-      .section-title {
-        color: #003B70;
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-      }
-      
-      .section-title::after {
-        content: '';
-        height: 3px;
-        background-color: #00A5B5;
-        flex-grow: 1;
-        margin-left: 15px;
-      }
-      
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      
-      .card {
-        background-color: #F7F9FA;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        overflow: hidden;
-        width: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin-bottom: 20px;
-      }
-      
-      .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      }
-      
-      .card-header {
-        background-color: #00A5B5;
-        color: white;
-        padding: 15px 20px;
-        font-weight: 500;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-      }
-      
-      .card-icon {
-        background-color: white;
-        color: #00A5B5;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
-        font-size: 16px;
-      }
-      
-      .card-body {
-        padding: 20px;
-      }
-      
-      .flashcard {
-        margin-bottom: 20px;
-      }
-      
-      .flashcard:last-child {
-        margin-bottom: 0;
-      }
-      
-      .question {
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: #003B70;
-      }
-      
-      .answer {
-        color: #505050;
-        background-color: white;
-        padding: 15px;
-        border-radius: 8px;
-        border-left: 4px solid #00A5B5;
-      }
-      
-      .highlight-box {
-        background-color: #E3F6F7;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 30px 0;
-        border-left: 4px solid #00A5B5;
-      }
-      
-      .highlight-title {
-        color: #003B70;
-        font-weight: 600;
-        margin-bottom: 10px;
-        font-size: 18px;
-      }
-      
-      .highlight-content {
-        color: #505050;
-      }
-      
-      .stats {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin: 30px 0;
-      }
-      
-      .stat-item {
-        flex: 1;
-        min-width: 200px;
-        background-color: #003B70;
-        color: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-      }
-      
-      .stat-value {
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-      
-      .stat-label {
-        font-size: 14px;
-        opacity: 0.9;
-      }
-      
-      .quote {
-        background-color: #F7F9FA;
-        border-left: 4px solid #00A5B5;
-        padding: 20px;
-        margin: 30px 0;
-        font-style: italic;
-        color: #505050;
-      }
-      
-      .quote-text {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-      
-      .quote-author {
-        font-weight: 600;
-        color: #003B70;
-        font-style: normal;
-      }
-      
-      .implementation-steps {
-        margin: 30px 0;
-      }
-      
-      .step {
-        display: flex;
-        margin-bottom: 20px;
-        align-items: flex-start;
-      }
-      
-      .step-number {
-        background-color: #00A5B5;
-        color: white;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        margin-right: 15px;
-        flex-shrink: 0;
-      }
-      
-      .step-content {
-        flex-grow: 1;
-      }
-      
-      .step-title {
-        font-weight: 600;
-        color: #003B70;
-        margin-bottom: 5px;
-      }
-      
-      
-      @media (min-width: 768px) {
-        .card {
-          width: calc(50% - 10px);
-        }
-      }
-    </style>
+    
+    
   </head>
   <body>
-    <div class="hero">
-      <h1>Methuen Public Schools</h1>
-      <div class="subtitle">Mental Health Technology Implementation Case Study</div>
+    <section class="hero" style="background-image: url('../src/66f43f29ea49634c8b741630_1200.jpg');">
+      
+      <div class="container">
+          <h1>Methuen Public Schools</h1>
+          <p>Mental Health Technology Implementation Case Study</p>
+          
+      </div>
+  </section>
+
+
+<div class="sidebar-container">
+    <div class="container">
+      <div class="sidebar">
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#challenge-context">Challenge & Context</a></li>
+            <li><a href="#solution-implementation">Solution & Implementation</a></li>
+            <li><a href="#results-impact">Results & Impact</a></li>
+            <li><a href="#challenges-solutions">Challenges & Solutions</a></li>
+            <li><a href="#sustainability-future-plans">Sustainability & Future Plans</a></li>
+            <li><a href="#lessons-learned-recommendations">Lessons Learned & Recommendations</a></li>
+            <li><a href="#budget-resources">Budget & Resources</a></li>
+        </ul>
     </div>
     
-    <div class="container">
       <div class="district-info">
         <div class="info-item">
           <div class="info-label">Location</div>
@@ -339,7 +101,7 @@
         </div>
       </div>
       
-      <div class="section">
+      <div class="section" id="challenge-context">
         <div class="section-title">Challenge & Context</div>
         <p>Methuen Public Schools serves approximately 7,000 students across 9 schools (5 elementary, 3 middle, and 1 high school) in Methuen, Massachusetts. The district faced rising mental health concerns among students, including increased anxiety, depression, and behavioral issues. This trend was exacerbated by the COVID-19 pandemic, which disrupted educational continuity and social support networks.</p>
         
@@ -364,7 +126,7 @@
         </div>
       </div>
       
-      <div class="section">
+      <div class="section" id="solution-implementation">
         <div class="section-title">Solution & Implementation</div>
         <p>After researching available options, Methuen Public Schools decided to implement a comprehensive digital mental health platform that would streamline screening, documentation, and care coordination. The selected platform included tools for universal mental health screening, progress monitoring, intervention tracking, and resource management.</p>
         
@@ -416,7 +178,7 @@
         </div>
       </div>
       
-      <div class="section">
+      <div class="section" id="results-impact">
         <div class="section-title">Results & Impact</div>
         <p>After implementing the digital mental health platform district-wide for one academic year, Methuen Public Schools observed significant improvements in their ability to support student mental health needs.</p>
         
@@ -435,42 +197,44 @@
           </div>
         </div>
         
-        <div class="card">
-          <div class="card-header">
-            <span class="card-icon">📊</span>KEY OUTCOMES
-          </div>
-          <div class="card-body">
-            <div class="flashcard">
-              <div class="question">How did the system improve mental health support efficiency?</div>
-              <div class="answer">
-                <ul>
-                  <li>Streamlined documentation reduced paperwork time by approximately 30%</li>
-                  <li>Centralized data allowed for more effective resource allocation</li>
-                  <li>Improved communication between counselors, teachers, and families</li>
-                  <li>Enhanced ability to track intervention effectiveness and make data-driven decisions</li>
-                  <li>Better coordination of services and referrals to community partners</li>
-                </ul>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-icon">📊</span>KEY OUTCOMES
+            </div>
+            <div class="card-body">
+              <div class="flashcard">
+                <div class="question">How did the system improve mental health support efficiency?</div>
+                <div class="answer">
+                  <ul>
+                    <li>Streamlined documentation reduced paperwork time by approximately 30%</li>
+                    <li>Centralized data allowed for more effective resource allocation</li>
+                    <li>Improved communication between counselors, teachers, and families</li>
+                    <li>Enhanced ability to track intervention effectiveness and make data-driven decisions</li>
+                    <li>Better coordination of services and referrals to community partners</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         
-        <div class="card">
-          <div class="card-header">
-            <span class="card-icon">👨‍🎓</span>STUDENT IMPACT
-          </div>
-          <div class="card-body">
-            <div class="flashcard">
-              <div class="question">How did students benefit from the technology implementation?</div>
-              <div class="answer">
-                <ul>
-                  <li>More students received support before reaching crisis levels</li>
-                  <li>Students had access to self-help resources through the platform</li>
-                  <li>Improved consistency in mental health support across all schools</li>
-                  <li>More equitable distribution of resources based on identified needs</li>
-                  <li>Reduced stigma through normalized mental health conversations</li>
-                  <li>Improved academic outcomes for students receiving mental health support</li>
-                </ul>
+          <div class="card">
+            <div class="card-header">
+              <span class="card-icon">👨‍🎓</span>STUDENT IMPACT
+            </div>
+            <div class="card-body">
+              <div class="flashcard">
+                <div class="question">How did students benefit from the technology implementation?</div>
+                <div class="answer">
+                  <ul>
+                    <li>More students received support before reaching crisis levels</li>
+                    <li>Students had access to self-help resources through the platform</li>
+                    <li>Improved consistency in mental health support across all schools</li>
+                    <li>More equitable distribution of resources based on identified needs</li>
+                    <li>Reduced stigma through normalized mental health conversations</li>
+                    <li>Improved academic outcomes for students receiving mental health support</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -482,8 +246,9 @@
         </div>
       </div>
       
-      <div class="section">
+      <div class="section" id="challenges-solutions">
         <div class="section-title">Challenges & Solutions</div>
+        <div class="card-container">
         <div class="card">
           <div class="card-header">
             <span class="card-icon">🧩</span>IMPLEMENTATION CHALLENGES
@@ -525,11 +290,13 @@
           </div>
         </div>
       </div>
+      </div>
       
-      <div class="section">
+      <div class="section" id="sustainability-future-plans">
         <div class="section-title">Sustainability & Future Plans</div>
         <p>Methuen Public Schools has developed a comprehensive sustainability plan to ensure the long-term success of their mental health technology initiative.</p>
         
+        <div class="card-container">
         <div class="card">
           <div class="card-header">
             <span class="card-icon">🌱</span>SUSTAINABILITY STRATEGIES
@@ -570,9 +337,11 @@
           </div>
         </div>
       </div>
+      </div>
       
-      <div class="section">
+      <div class="section" id="lessons-learned-lecommendations">
         <div class="section-title">Lessons Learned & Recommendations</div>
+        <div class="card-container">
         <div class="card">
           <div class="card-header">
             <span class="card-icon">💡</span>KEY LESSONS
@@ -615,9 +384,11 @@
           </div>
         </div>
       </div>
+      </div>
       
-      <div class="section">
+      <div class="section" id="budget-resources">
         <div class="section-title">Budget & Resources</div>
+        <div class="card-container">
         <div class="card">
           <div class="card-header">
             <span class="card-icon">💰</span>BUDGET INFORMATION
@@ -656,13 +427,19 @@
           </div>
         </div>
       </div>
+
+      </div>
+      
       
       <div class="highlight-box">
         <div class="highlight-title">Key Takeaway</div>
         <div class="highlight-content">Methuen Public Schools' experience demonstrates that with careful planning, stakeholder engagement, and phased implementation, digital mental health tools can significantly enhance a district's ability to support student mental health needs. The success of their initiative shows that technology, when properly implemented, can extend the reach and effectiveness of existing mental health staff and resources.</div>
       </div>
+    
+      
     </div>
 
+</div>
 
     <!-- Chat Bubble -->
     <button id="floatingChatButton" class="chat-bubble">💬</button>
@@ -701,7 +478,7 @@
                         <li><a href="#aboutus">About Us</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#resources">Resources</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                      
                     </ul>
                 </div>
                 <div class="footer-column">
