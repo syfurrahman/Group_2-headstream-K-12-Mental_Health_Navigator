@@ -132,7 +132,7 @@ header {
   top: 50%;
   left: .01rem;  /* Adjust this for precise horizontal positioning */
   transform: translateY(-50%);
-  width: 700px;  /* Adjust size as needed */
+  width: 800px;  /* Adjust size as needed */
   height: auto;
   opacity: 0.6;  /* Slightly more visible */
   z-index: 2;  /* Ensure it’s above the background */
@@ -1235,3 +1235,5 @@ footer {
     width: calc(50% - 10px);
   }
 }
+
+
